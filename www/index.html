@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class = "container">
+            <span class="logo">Croak'n'All</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="/index.html">Главная</a></li>
+                    <li><a href="/takePart.html">Участвовать</a></li>
+                    <li><a href="gallery.html">Галлерея</a></li>
+                    <li><a href="aboutUs.html">О нас</a></li>
+                    <!-- <li class="btn"><a href="#">Contacts</a></li> -->
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="hero container">
+            <img src="img/i.png" alt="" class="src">
+            <div class="hero--info">
+                <h2>SPONSORED by: flash, doshirak, brawl stars</h2>
+                <h1>Здравствуй, Путник!</h1>
+                <h1> Хочешь принять участие в разработке Croaken Rogue? </h1>
+                <p>Здесь ты можешь выражать своё мнение, поддерживать авторов и влиять на курс разработки путём голосований, обсуждений и бог весть чего еще мы придумаем! Пристегивайте ремни, мы начинаем!</p>
+                <button class="btn">Я готов, Мастер...</button>
+            </div>
+        </div>
+        <div class="trending">
+            <a href="#" class="see-all">SEE ALL</a>
+            <h3>Любимые концепты</h3>
+            
+            <div class="games">
+                <div class="block">
+                    <img src="img/WhiteLittleCroak.jpg" alt="">
+                    <span>Наш первый концепт ГГ</span>
+                </div>
+                
+                <div class="block">
+                    <img src="img/Bar.jpg" alt="">
+                    <span>Локация, которую мы вам скоро покажем хихи</span>
+                </div>
+                <div class="block">
+                    <img src="img/MonsterCroak.jpg" alt="">
+                    <span>Концепт механики болезни</span>
+                </div>
+                <div class="block">
+                    <img src="img/WhiteLastCroak.png" alt="">
+                    <span>Текущий спрайт ГГ</span>
+                </div>
+            </div>
+        </div>
+        <div class="container big-text">
+            <p>Pulvis et umbra sumus.....</p>
+        </div>
+        <div class="container banner">
+            <h3></h3>
+            <p>
+                Рад представить вам зачинателей сего действа:
+            </p>
+            <img src="/img/WeAre.jpg" alt="">
+        </div>
+        <div class="container email">
+            <h3>Подпишитесь на обновления!</h3>
+            <p>И узнавайте первыми об открытии бета-тестов и прочих активностях</p>
+            <div class="block">
+                <div>
+                    <h4>Введите email для получения оповещений</h4>
+                    <p>В ближайшем будущем появятся более интересные пути донесения информации)</p>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="Enter email adress">
+                    <button onclick="checkEmail()">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="Logo">Croak'n'All</span>
+                <p>pipi pupu</p>
+            </div>
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                    <li>Дата выхода: ** ** ****</li>
+                    <li>Комикс: link</li>
+                    <li>Движок: Godot</li>
+
+                </ul>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <p>vk: link</p>
+                <p>steam: link</p>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright saved</p>
+    </footer>
+
+    <script>
+        function checkEmail()
+        {
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) alert('Пропущена @');
+            else if(!email.includes('.')) alert('Пропущена .');
+            else alert('ЗБС');
+        }
+    </script>
+</body>
+</html>
